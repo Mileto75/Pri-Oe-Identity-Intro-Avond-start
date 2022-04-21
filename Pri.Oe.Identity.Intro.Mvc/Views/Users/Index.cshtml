@@ -1,0 +1,8 @@
+﻿
+<p>Welcome @User.Identity.Name</p>
+<ul>
+    @foreach(var claim in User.Claims)
+    { 
+        <li>@claim.Type : @claim.Value </li>
+    }
+</ul>
